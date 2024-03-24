@@ -1,7 +1,14 @@
 import React from 'react';
+import ChakraProvider from './Providers/ChakraProvider';
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <React.StrictMode>
+      <ChakraProvider>
+        <div>App</div>
+      </ChakraProvider>
+    </React.StrictMode>
+  );
 }
 
 export default App;
