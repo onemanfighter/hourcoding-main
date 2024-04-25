@@ -24,15 +24,15 @@
     "zustand": "^4.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --silent --watchAll=false",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --silent --watchAll=false",
     "prettier:write": "prettier --write .",
     "prettier:check": "prettier --check .",
     "prettier:staged": "prettier --write .",
     "lint:staged": "eslint --fix --ext .ts,.tsx $(git diff --name-only --cached --relative --diff-filter=ACMRTUXB | grep '\\.tsx\\?$')",
     "lint:fix": "eslint --fix --ext .ts,.tsx ./src",
-    "eject": "react-scripts eject",
+    "eject": "craco eject",
     "lint": "eslint --fix --ext .ts,.tsx ./src",
     "prepare": "husky",
     "cy:open": "cypress open"
@@ -59,6 +59,8 @@
     "@babel/preset-env": "^7.24.4",
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.24.1",
+    "@craco/craco": "^7.1.0",
+    "@craco/types": "^7.1.0",
     "@jest/globals": "^29.7.0",
     "@types/react-test-renderer": "^18.3.0",
     "babel-jest": "^29.7.0",
