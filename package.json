@@ -31,7 +31,8 @@
     "lint:fix": "eslint --fix --ext .ts,.tsx ./src",
     "eject": "react-scripts eject",
     "lint": "eslint --fix --ext .ts,.tsx ./src",
-    "prepare": "husky"
+    "prepare": "husky",
+    "cy:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +58,7 @@
     "@babel/preset-typescript": "^7.24.1",
     "@jest/globals": "^29.7.0",
     "babel-jest": "^29.7.0",
+    "cypress": "^13.8.1",
     "eslint": "^8.0.1",
     "eslint-config-react-app": "^7.0.1",
     "eslint-config-standard": "^17.1.0",
