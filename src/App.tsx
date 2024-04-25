@@ -1,9 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const { t } = useTranslation();
   return (
     <React.StrictMode>
-      <div>App</div>
+      <div>{t('App')}</div>
     </React.StrictMode>
   );
 }
